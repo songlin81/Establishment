@@ -2,7 +2,7 @@
 1. Install EF via Tools > NuGet Package Manager > Manage Nuget Packages for Solutions
 
 
-
+http://techbrij.com/generic-repository-unit-of-work-entity-framework-unit-testing-asp-net-mvc
 
 
 
