@@ -109,3 +109,27 @@
 	ORDER BY EmailCount DESC
 
  
+[11] column to row
+
+	Table is:
+	+----+------+
+	| Id | Name |
+	+----+------+    
+	| 1  | aaa  |
+	| 1  | bbb  |
+	| 1  | ccc  |
+	| 1  | ddd  |
+	| 1  | eee  |
+	+----+------+
+	Required output:
+	+----+---------------------+
+	| Id |        abc          |
+	+----+---------------------+ 
+	|  1 | aaa,bbb,ccc,ddd,eee |
+	+----+---------------------+
+	SELECT ID, 
+		abc = STUFF(
+					 (SELECT ',' + name FROM temp1 FOR XML PATH ('')), 1, 1, ''
+				   ) 
+	FROM temp1 GROUP BY id
+
