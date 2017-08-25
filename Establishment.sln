@@ -52,6 +52,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuickRound", "QuickRound", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30C7F0C1-B548-4782-8B74-3B29147DC5CE}"
 	ProjectSection(SolutionItems) = preProject
+		Helper.sql = Helper.sql
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
